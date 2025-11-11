@@ -7,8 +7,8 @@ function App() {
   const[user,setUser] = useState(null)
   return (
 
-    <UserContext.Provider value={ setUser} >
-    <div style={{textAlign:"center"   }}>
+    <UserContext.Provider value={{ user, setUser}} >
+    <div style={{textAlign:"center" , marginTop :" 50px",  }}>
               <h2>Login Dashboard</h2>
       {!user? <Login /> : <Dashboard />}
     </div>
