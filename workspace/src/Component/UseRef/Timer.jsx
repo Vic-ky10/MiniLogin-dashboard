@@ -12,8 +12,10 @@ function Timer() {
         return () => clearInterval(intervalRef.current)
     },[])
     return (
-    <div>
-        <h1>timer :{counter} seconds</h1>
+    <div style={{textAlign :'center' , position:'relative' 
+        , top:'200px', backgroundColor:"#3333" , height:'300px'
+    }}>
+        <h1>Timer :{counter} seconds</h1>
         <button onClick={()=> clearInterval(intervalRef.current)}> stoptimer</button>
     </div>
   )
