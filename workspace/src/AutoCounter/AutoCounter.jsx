@@ -1,6 +1,6 @@
 
 
-import React, { useEffect, useState } from 'react'
+import React, {useRef, useEffect, useState } from 'react'
 
 function AutoCounter() {
 
@@ -32,8 +32,15 @@ function AutoCounter() {
         
     }
   return (
-    <div>
-        
+    <div style={{textAlign: "center" ,marginTop :" 50px"}}>
+        <h2>AutoCounter</h2>
+<button onClick={start}>Start</button>
+<button onClick={stop}> stop</button>
+<button onClick={reset}> reset</button>
+
+
+
+
     </div>
   )
 }
